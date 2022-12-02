@@ -21,7 +21,7 @@ public class Role implements Serializable{
 	
 	@Id
 	@GeneratedValue(strategy= GenerationType.AUTO, generator="native") //Se utiliza para realizar el autoincremento de MySQL
-	@GenericGenerator(name="native",strategy="native")
+	@GenericGenerator(name="native",strategy="native") //indicamos a hibernate que queremos utilizar la opcion propia de autoincremento de MySQL.
 	private Long id;
 	
 	@Column
